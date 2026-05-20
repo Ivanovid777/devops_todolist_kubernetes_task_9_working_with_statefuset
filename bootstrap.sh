@@ -11,6 +11,7 @@ kubectl apply -f .infrastructure/confgiMap.yml -n todoapp &&
 kubectl apply -f .infrastructure/secret.yml -n todoapp &&
 kubectl apply -f .infrastructure/deployment.yml -n todoapp &&
 
+kubectl apply -f .infrastructure/configMapMysql.yml -n mysql &&
 kubectl apply -f .infrastructure/headless_service.yml -n mysql &&
 kubectl apply -f .infrastructure/mysql_secret.yml -n mysql &&
 kubectl apply -f .infrastructure/statefulSet.yml -n mysql
